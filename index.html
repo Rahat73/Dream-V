@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <main class="w-4/5 mx-auto grid grid-cols-4 my-16">
+    <main class="w-4/5 mx-auto grid grid-cols-4 my-16 gap-6">
         <div class="col-span-3 grid grid-cols-3 gap-6">
             <div class="bg-[#0a0927] text-white">
                 <img src="images/players/jugador_fitxa-ansu.jpg" alt="ansu-fati">
@@ -104,8 +104,36 @@
                 <button class="bg-red-600 px-20 py-2 block mx-auto mb-5">Select</button>
             </div>
         </div>
-        <div>
-            
+        <div class=" text-white">
+            <div class="bg-[#0a0927] p-8 mb-10">
+                <h1 class="text-3xl text-center pb-5">Selected - V</h1>
+                <ol class="list-decimal pl-7">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>e</li>
+                </ol>
+            </div>
+            <div class="bg-[#0a0927] p-8">
+                <h1 class="text-3xl text-center pb-5">Budget</h1>
+                <div class="flex justify-end">
+                    <p>Per Player:</p>
+                    <input type="text" class="w-1/2 ml-5">
+                </div>
+                <button class="block mx-auto px-12 py-2 bg-red-600 my-5">Calculate</button>
+                <p class="text-center mb-5">Player Expenses: <span>1230</span></p>
+                <div class="flex my-3 justify-end">
+                    <p>Manager:</p>
+                    <input type="text" class="w-1/2 ml-5">
+                </div>
+                <div class="flex my-3 justify-end">
+                    <p>Coach:</p>
+                    <input type="text" class="w-1/2 ml-5">
+                </div>
+                <button class="block mx-auto px-8 py-2 bg-red-600 my-5">Calculate Total</button>
+                <p class="text-center">Total: <span>1230</span></p>
+            </div>
         </div>
     </main>
 
