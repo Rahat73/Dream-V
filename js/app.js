@@ -1,9 +1,15 @@
 function addSelectedPlayer(elementID, playerName) {
-    const newChild = document.createElement('li');
-    newChild.innerText = playerName;
-    document.getElementById('playerList').appendChild(newChild);
-    document.getElementById(elementID).setAttribute('disabled', 'true');
-    document.getElementById(elementID).style.backgroundColor = "#fb1d72"
+    const playerCount = document.querySelector('ol').childElementCount;
+    if (playerCount < 5) {
+        const newChild = document.createElement('li');
+        newChild.innerText = playerName;
+        document.getElementById('playerList').appendChild(newChild);
+        document.getElementById(elementID).setAttribute('disabled', 'true');
+        document.getElementById(elementID).style.backgroundColor = "#fb1d72"
+    }
+    else {
+        alert("You can't add more than 5 players");
+    }
 }
 
 
@@ -42,6 +48,10 @@ document.getElementById('koundeBTN').addEventListener('click', function () {
 })
 document.getElementById('stegenBTN').addEventListener('click', function () {
     addSelectedPlayer('stegenBTN', 'Ter Stegen');
+})
+
+document.getElementById('calculatePlayerCost').addEventListener('click', function () {
+    playerCost();
 })
 
 document.getElementById('calculateTotalCost').addEventListener('click', function () {
