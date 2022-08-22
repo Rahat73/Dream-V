@@ -111,18 +111,20 @@
         </div>
         <div class=" text-white">
             <div class="bg-[#0a0927] p-8 mb-10">
-                <h1 class="text-3xl text-center pb-5">Selected - V</h1>
+                <h1 class="text-3xl text-center mb-3">Selected - V</h1>
+                <div class="flex-grow border-t border-gray-400 mb-5"></div>
                 <ol id="playerList" class="list-decimal pl-7"></ol>
             </div>
             <div class="bg-[#0a0927] p-8">
-                <h1 class="text-3xl text-center pb-5">Budget</h1>
+                <h1 class="text-3xl text-center mb-3">Budget</h1>
+                <div class="flex-grow border-t border-gray-400 mb-5"></div>
                 <div class="flex justify-end">
                     <p>Per Player:</p>
                     <input id="perPlayerInput" type="text" class="w-1/2 ml-5 text-black">
                 </div>
                 <button id="calculatePlayerCost"
                     class="block mx-auto px-12 py-2 bg-red-600 my-5 hover:bg-red-900">Calculate</button>
-                <p class="text-center mb-5">Player Expenses: <span id="playerCost">0</span></p>
+                <p class="text-center text-lg font-semibold mb-5">Player Expenses: <span id="playerCost">0</span></p>
                 <div class="flex my-3 justify-end">
                     <p>Manager:</p>
                     <input id="managerCostInput" type="text" class="w-1/2 ml-5 text-black">
@@ -133,7 +135,7 @@
                 </div>
                 <button id="calculateTotalCost"
                     class="block mx-auto px-8 py-2 bg-red-600 my-5 hover:bg-red-900">Calculate Total</button>
-                <p class="text-center">Total: <span id="totalCost">0</span></p>
+                <p class="text-center text-xl font-semibold">Total: <span id="totalCost">0</span></p>
             </div>
         </div>
     </main>

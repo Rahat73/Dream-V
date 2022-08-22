@@ -9,9 +9,14 @@ function setValue(elementID, value) {
 function playerCost() {
     const playerCount = document.querySelector('ol').childElementCount;
     const perPlayerCost = getValueFromInputField('perPlayerInput');
-    const totalPlayerCost = playerCount * perPlayerCost;
 
-    setValue('playerCost', totalPlayerCost);
+    if (!isNaN(perPlayerCost) && perPlayerCost >= 0) {
+        const totalPlayerCost = playerCount * perPlayerCost;
+        setValue('playerCost', totalPlayerCost);
+    }
+    else {
+        alert("Please input positive numerical value...!");
+    }
 }
 
 function calculateTotalCost() {
@@ -19,6 +24,11 @@ function calculateTotalCost() {
     const managerCost = getValueFromInputField('managerCostInput');
     const coachCost = getValueFromInputField('coachCostInput');
 
-    const totalCost = playerCost + managerCost + coachCost;
-    setValue('totalCost', totalCost);
+    if (!isNaN(managerCost) && !isNaN(coachCost) && managerCost > 0 && coachCost >= 0) {
+        const totalCost = playerCost + managerCost + coachCost;
+        setValue('totalCost', totalCost);
+    }
+    else {
+        alert("Please input positive numerical value...!");
+    }
 }
