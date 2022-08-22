@@ -10,6 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        berkshire: "'Berkshire Swash', cursive",
+                        manrope: "'Manrope', sans-serif",
+                    },
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
 </head>
 
 <body class="bg-[#181733]">
@@ -18,7 +33,7 @@
             <img src="images/pedri-dembele.png" alt="celebrate">
         </div>
         <div class="col-span-2 flex flex-col justify-center">
-            <h1 class="font-semibold text-8xl text-[#FF5E19] italic text-center mb-7">Dream V</h1>
+            <h1 class="font-semibold text-8xl text-[#FF5E19] font-berkshire text-center mb-7">Dream V</h1>
             <p class="text-white text-center">Create your five player dream team from FC Barcelona. You can also
                 calculate
                 team cost and
