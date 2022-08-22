@@ -3,6 +3,7 @@ function addSelectedPlayer(elementID, playerName) {
     newChild.innerText = playerName;
     document.getElementById('playerList').appendChild(newChild);
     document.getElementById(elementID).setAttribute('disabled', 'true');
+    document.getElementById(elementID).style.backgroundColor = "#fb1d72"
 }
 
 
